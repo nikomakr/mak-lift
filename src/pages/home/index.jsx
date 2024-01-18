@@ -1,10 +1,10 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
+import React from 'react'
+import Navigation from '../../components/navigation'
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+export default function home() {
+  return (
+    <div>
+    <Navigation text1='About US' text2='Fleet' text3='Contact Us' text4='Search & Hire' />
+  </div>
+  )
+}
