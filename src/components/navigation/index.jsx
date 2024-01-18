@@ -1,15 +1,29 @@
-import React from 'react';
+import React from 'react'
+import {Container} from 'react-bootstrap'
 
-function Navigation() {
+export default function Navigation({text1, text2, text3, text4}) {
+
   return (
-    <nav>
-      <a href="/">Home</a>
-      <a href="/about">About</a>
-      <a href="/fleet">Fleet</a>
-      <a href="/contact">Contact Us</a>
-      <a href="/search">Search & Hire</a>
-    </nav>
-  );
+    <div style={{zIndex: '10'}}>
+      <div className='w-100'>
+      <Container className='d-flex align-items-center justify-content-between p-2 border-bottom'>
+           <div className='d-flex align-tems-center gap-md-5' >
+            
+          {/* <NavLink className='fw-600 fs-2 align-self-center' to='/'><img src={Logo} alt="firstlogo" /></NavLink> */}
+         </div>
+         <div className='d-flex justify-content-center align-items-center gap-5 '>
+            <h5><a href="/#" className='text-dark fs-3'>About US</a></h5>
+            <h5><a href="/#" className='text-dark fs-3'>Fleet</a></h5>
+            <h5><a href="/#" className='text-dark fs-3'>Contact Us</a></h5>
+            <h5><a href="/#" className='text-dark fs-3'>Search & Hire</a></h5>
+          </div>
+        </Container>
+      </div>
+
+    </div>
+  )
 }
 
-export default Navigation;
+
+
+
