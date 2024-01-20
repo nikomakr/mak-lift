@@ -1,7 +1,7 @@
 import React from 'react';
 import Calendar from 'react-calendar';
 
-function mountCalendar() {
+function MountCalendar() {
   return (
     <div>
       <h3>Truck Mount Lift Calendar</h3>
@@ -10,4 +10,4 @@ function mountCalendar() {
   );
 }
 
-export default mountCalendar;
+export default MountCalendar;

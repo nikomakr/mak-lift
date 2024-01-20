@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import boomCalendar from './boomCalendar';
-import scissorsCalendar from './scissorsCalendar';
-import spiderCalendar from './spiderCalendar';
-import mountCalendar from './mountCalendar';
+import BoomCalendar from './boomCalendar';
+import ScissorsCalendar from './scissorsCalendar';
+import SpiderCalendar from './spiderCalendar';
+import MountCalendar from './mountCalendar';
 
-function consolidatedCalendar() {
+function ConsolidatedCalendar() {
   const [selectedFleetOption, setSelectedFleetOption] = useState([]);
   const [dateRange, setDateRange] = useState([new Date(), new Date()]);
 
@@ -20,7 +20,7 @@ function consolidatedCalendar() {
     <div>
       <h2>Fleet Availability Calendar</h2>
       <div>
-        <label>Select Fleet:</label>
+        <label>Select Fleet Option:</label>
         <select
           multiple
           value={selectedFleet}
@@ -39,13 +39,13 @@ function consolidatedCalendar() {
       </div>
 
       <div className="calendars-container">
-        <boomCalendar />
-        <scissorsCalendar />
-        <spiderCalendar />
-        <mountCalendar />
+        <BoomCalendar />
+        <ScissorsCalendar />
+        <SpiderCalendar />
+        <MountCalendar />
       </div>
     </div>
   );
 }
 
-export default consolidatedCalendar;
+export default ConsolidatedCalendar;

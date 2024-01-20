@@ -1,14 +1,14 @@
 // BoomPage.js
 import React from 'react';
-import mountCalendar from './mountCalendar';
+import MountCalendar from '../../components/mountCalendar/mountCalendar';
 
-function mount() {
+function Mount() {
   return (
     <div>
       <h1>Truck Mount Lift Page</h1>
-      <mountCalendar />
+      <MountCalendar />
     </div>
   );
 }
 
-export default mount;
+export default Mount;
