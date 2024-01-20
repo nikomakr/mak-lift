@@ -1,7 +1,7 @@
 import React from 'react'
 import Form from '../../components/form'
 import Image from '../../components/Image'
-const contactUs = () => {
+const ContactUs = () => {
     return(
         <section>
             <div className="container">
@@ -27,3 +27,5 @@ const contactUs = () => {
         </section>
     )
 } 
+
+export default ContactUs
