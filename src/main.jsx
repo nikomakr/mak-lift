@@ -1,7 +1,8 @@
-import React from 'react';
+// import React from 'react';
 import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import * as bootstrap from 'bootstrap';
+import 'bootstrap-icons/font/bootstrap-icons.css';
+// import * as bootstrap from 'bootstrap';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './pages/home';
@@ -9,6 +10,10 @@ import ContactUs from './pages/contactUs';
 import NotFound from './pages/notFound';
 import Search from './pages/search/search';
 import Boom from './pages/boom/boom';
+import Scissors from './pages/boom/boom'
+import Spider from './pages/boom/boom'
+import Mount from './pages/boom/boom'
+
 
 const router = createBrowserRouter([
   {

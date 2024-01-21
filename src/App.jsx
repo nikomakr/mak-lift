@@ -1,8 +1,9 @@
 import './App.css';
-import React from 'react';
 // import { BrowserRouter as Router, Route, Switch, Outlet } from 'react-router-dom';
 import Footer from './pages/footer';
 import Navigation from './components/navigation';
+
+import { Outlet } from 'react-router-dom';
 
 
 function App() {
