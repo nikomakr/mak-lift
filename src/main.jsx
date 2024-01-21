@@ -13,6 +13,8 @@ import Boom from './pages/boom/boom';
 import Scissors from './pages/boom/boom'
 import Spider from './pages/boom/boom'
 import Mount from './pages/boom/boom'
+import AboutUs from './pages/about/index'
+
 
 
 const router = createBrowserRouter([
@@ -42,6 +44,9 @@ const router = createBrowserRouter([
       }, {
         path: '/mount',
         element: <Mount />
+      }, {
+        path: '/aboutUs',
+        element: <AboutUs/>
       }
     ],
   },
