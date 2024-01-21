@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import BoomCalendar from './boomCalendar';
+import BoomCalendar from '../boomCalendar';
 import ScissorsCalendar from './scissorsCalendar';
 import SpiderCalendar from './spiderCalendar';
 import MountCalendar from './mountCalendar';

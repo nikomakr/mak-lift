@@ -1,6 +1,6 @@
 
 import React from 'react';
-import BoomCalendar from '../../components/boomCalendar/boomCalendar';
+import BoomCalendar from '../../components/boomCalendar';
 
 function Boom() {
   return (
