@@ -18,7 +18,7 @@ const ContactUs = () => {
                     
                     <p>Call, Email us or complete the form below for inquiries</p>
                  <div>   
-                <b> <i className="bi bi-phone-vibrate-fill" hieght="20" width="20"> +302382025708 </i></b>
+                <b> <i className="bi bi-phone-vibrate-fill" height="20" width="20"> +302382025708 </i></b>
 
                <b> <i className="bi bi-envelope-at-fill">info@mak-lift.gr</i> </b>
                </div>
