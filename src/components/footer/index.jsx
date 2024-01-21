@@ -41,10 +41,17 @@ function Footer() {
       </p>
       </div>
       </div>
-
+      
       <hr className="my-15"/>
 
 
+      {/* Footer bottom */}
+      <div className="footer-bottom">
+        <p className='text-xs-center'>
+        Georgios Makridis Ltd is a registered company in Greece. The company owns the brand name of Mak-Lift and the mak-lift.gr along side the brand name of elec-mak and the elec-mak.gr
+        &copy;{new Date().getFullYear()} Mak-Lift. All Rights Reserved
+        </p>
+      </div>
     </div>
     </footer>
   );
