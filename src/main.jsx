@@ -10,6 +10,9 @@ import ContactUs from './pages/contactUs';
 import NotFound from './pages/notFound';
 import Search from './pages/search/search';
 import Boom from './pages/boom/boom';
+import Scissors from './pages/scissors/scissors';
+import Spider from './pages/spider/spider';
+import Mount from './pages/mount/mount';
 
 const router = createBrowserRouter([
   {
