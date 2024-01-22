@@ -1,10 +1,9 @@
-
 import React from 'react';
 import Calendar from 'react-calendar';
 
 function BoomCalendar() {
   return (
-    <div>
+    <div id="BoomCalendar">
       <h3>Boom Lift Calendar</h3>
       <Calendar />
     </div>

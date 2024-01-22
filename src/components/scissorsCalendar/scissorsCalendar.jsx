@@ -3,7 +3,7 @@ import Calendar from 'react-calendar';
 
 function ScissorsCalendar() {
   return (
-    <div>
+    <div id="SpiderCalendar">
       <h3>Scissors Lift Calendar</h3>
       <Calendar />
     </div>
