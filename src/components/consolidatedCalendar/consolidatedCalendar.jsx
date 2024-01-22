@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import BoomCalendar from '../boomCalendar/boomCalendar';
 import ScissorsCalendar from '../scissorsCalendar/scissorsCalendar';
 import SpiderCalendar from '../spiderCalendar/spiderCalendar';
@@ -9,7 +9,7 @@ function ConsolidatedCalendar() {
   const [dateRange, setDateRange] = useState([new Date(), new Date()]);
 
   const handleFilterChange = (selectedOptions) => {
-    setSelectedFleet(selectedOptions);
+    setSelectedFleetOption(selectedOptions);
   };
 
   const handleDateRangeChange = (newDateRange) => {
@@ -23,7 +23,7 @@ function ConsolidatedCalendar() {
         <label>Select Fleet Option:</label>
         <select
           multiple
-          value={selectedFleet}
+          value={selectedFleetOption}
           onChange={(e) => handleFilterChange(Array.from(e.target.selectedOptions, (option) => option.value))}
         >
           <option value="Boom Lift">Boom Lift</option>

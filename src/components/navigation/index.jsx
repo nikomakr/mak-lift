@@ -1,7 +1,7 @@
-import React from 'react'
+
 import {Container} from 'react-bootstrap'
 
-export default function Navigation({text1, text2, text3, text4}) {
+export default function Navigation() {
 
   return (
     <div style={{zIndex: '10'}}>
