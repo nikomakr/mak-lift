@@ -19,7 +19,7 @@ export default function Navigation() {
             <h5><a href="/mount" className='text-dark fs-3'>Mount</a></h5>
             <h5><a href="/spider" className='text-dark fs-3'>Spider</a></h5>
             <h5><a href="/contactUs" className='text-dark fs-3'>Contact Us</a></h5>
-            <h5><a href="/#" className='text-dark fs-3'>Search & Hire</a></h5>
+            <h5><a href="/search" className='text-dark fs-3'>Search & Hire</a></h5>
           </div>
         </Container>
       </div>
@@ -27,7 +27,6 @@ export default function Navigation() {
     </div>
   )
 }
-
 
 
 

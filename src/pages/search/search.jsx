@@ -1,6 +1,8 @@
 import React, {useEffect, useState}from 'react';
 import ConsolidatedCalendar from '../../components/consolidatedCalendar/consolidatedCalendar';
 import Api from '../../utils/api';
+
+
 function Search() {
   const [rate, setRate] = useState([])
   useEffect(()=>{
