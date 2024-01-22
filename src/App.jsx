@@ -4,6 +4,7 @@ import Footer from './components/footer';
 import Navigation from './components/navigation';
 
 import { Outlet } from 'react-router-dom';
+import 'react-calendar/dist/Calendar.css';
 
 
 function App() {

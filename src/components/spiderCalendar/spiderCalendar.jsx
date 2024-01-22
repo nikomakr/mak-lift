@@ -3,7 +3,7 @@ import Calendar from 'react-calendar';
 
 function SpiderCalendar() {
   return (
-    <div>
+    <div id="SpiderCalendar">
       <h3>Tracked Spider Lift Calendar</h3>
       <Calendar />
     </div>

@@ -1,8 +1,11 @@
-import  { useState } from 'react';
+import React, { useState } from 'react';
 import BoomCalendar from '../boomCalendar/boomCalendar';
 import ScissorsCalendar from '../scissorsCalendar/scissorsCalendar';
 import SpiderCalendar from '../spiderCalendar/spiderCalendar';
 import MountCalendar from '../mountCalendar/mountCalendar';
+// import ConsolidatedCalendar from '../consolidatedCalendar/consolidatedCalendar';
+// import Calendar from 'react-calendar';
+
 
 function ConsolidatedCalendar() {
   const [selectedFleetOption, setSelectedFleetOption] = useState([]);
@@ -10,6 +13,8 @@ function ConsolidatedCalendar() {
 
   const handleFilterChange = (selectedOptions) => {
     setSelectedFleetOption(selectedOptions);
+    console.log(selectedOptions);
+    document.getElementById("BoomCalendar").style.display="none";
   };
 
   const handleDateRangeChange = (newDateRange) => {
@@ -24,8 +29,9 @@ function ConsolidatedCalendar() {
         <select
           multiple
           value={selectedFleetOption}
-          onChange={(e) => handleFilterChange(Array.from(e.target.selectedOptions, (option) => option.value))}
-        >
+          onChange={(e) => {handleFilterChange(Array.from(e.target.selectedOptions, (option) => option.value))
+          
+          }}>
           <option value="Boom Lift">Boom Lift</option>
           <option value="Scissors Lift">Scissors Lift</option>
           <option value="Tracked Spider Lift">Tracked Spider Lift</option>
