@@ -1,15 +1,13 @@
+import BoomCalendar from '../../components/boomCalendar/boomCalendar';
 
-import React from 'react';
-import boomCalendar from './boomCalendar';
-
-function boom() {
+function Boom() {
   return (
     <div>
       <h1>Boom Lift Page</h1>
-      <boomCalendar />
+      <BoomCalendar />
     </div>
   );
 }
 
-export default boomPage;
+export default Boom;
 

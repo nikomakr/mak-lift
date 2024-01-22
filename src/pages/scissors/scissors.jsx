@@ -1,14 +1,14 @@
 // BoomPage.js
 import React from 'react';
-import scissorsCalendar from './scissorsCalendar';
+import ScissorsCalendar from '../../components/scissorsCalendar/scissorsCalendar';
 
-function scissors() {
+function Scissors() {
   return (
     <div>
       <h1>Scissors Lift Page</h1>
-      <scissorsCalendar />
+      <ScissorsCalendar />
     </div>
   );
 }
 
-export default scissors;
+export default Scissors;

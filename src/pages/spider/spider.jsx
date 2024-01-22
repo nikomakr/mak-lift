@@ -1,13 +1,13 @@
 import React from 'react';
-import spiderCalendar from './spiderCalendar';
+import SpiderCalendar from '../../components/spiderCalendar/spiderCalendar';
 
-function spider() {
+function Spider() {
   return (
     <div>
       <h1>Tracked Spider Lift Page</h1>
-      <spiderCalendar />
+      <SpiderCalendar />
     </div>
   );
 }
 
-export default spider;
+export default Spider;

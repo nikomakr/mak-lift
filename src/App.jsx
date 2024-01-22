@@ -1,7 +1,9 @@
 import './App.css';
-import { Outlet } from 'react-router-dom';
+import React from 'react';
+import { BrowserRouter as Router, Route, Outlet } from 'react-router-dom';
 import Footer from './components/footer'
 import Navigation from './components/navigation';
+
 
 function App() {
   return (

@@ -2,7 +2,7 @@
 import React from 'react';
 import Calendar from 'react-calendar';
 
-function boomCalendar() {
+function BoomCalendar() {
   return (
     <div>
       <h3>Boom Lift Calendar</h3>
@@ -11,4 +11,6 @@ function boomCalendar() {
   );
 }
 
-export default boomCalendar;
+export default BoomCalendar;
+
+

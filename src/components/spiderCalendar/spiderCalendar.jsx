@@ -1,7 +1,7 @@
 import React from 'react';
 import Calendar from 'react-calendar';
 
-function spiderCalendar() {
+function SpiderCalendar() {
   return (
     <div>
       <h3>Tracked Spider Lift Calendar</h3>
@@ -10,4 +10,4 @@ function spiderCalendar() {
   );
 }
 
-export default spiderCalendar;
+export default SpiderCalendar;

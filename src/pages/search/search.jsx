@@ -1,13 +1,13 @@
 import React from 'react';
-import consolidatedCalendar from './consolidatedCalendar';
+import ConsolidatedCalendar from '../../components/consolidatedCalendar/consolidatedCalendar';
 
-function search() {
+function Search() {
   return (
     <div>
       <h1>Search & Hire</h1>
-      <consolidatedCalendar />
+      <ConsolidatedCalendar />
     </div>
   );
 }
 
-export default search;
+export default Search;
