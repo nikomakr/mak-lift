@@ -1,5 +1,3 @@
-
-import React from 'react';
 import BoomCalendar from '../../components/boomCalendar/boomCalendar';
 
 function Boom() {

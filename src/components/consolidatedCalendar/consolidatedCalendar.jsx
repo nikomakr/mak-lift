@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import BoomCalendar from './boomCalendar';
-import ScissorsCalendar from './scissorsCalendar';
-import SpiderCalendar from './spiderCalendar';
-import MountCalendar from './mountCalendar';
+import BoomCalendar from '../boomCalendar/boomCalendar';
+import ScissorsCalendar from '../scissorsCalendar/scissorsCalendar';
+import SpiderCalendar from '../spiderCalendar/spiderCalendar';
+import MountCalendar from '../mountCalendar/mountCalendar';
 
 function ConsolidatedCalendar() {
   const [selectedFleetOption, setSelectedFleetOption] = useState([]);
