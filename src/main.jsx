@@ -10,9 +10,15 @@ import ContactUs from './pages/contactUs';
 import NotFound from './pages/notFound';
 import Search from './pages/search/search';
 import Boom from './pages/boom/boom';
-import Scissors from './pages/scissors/scissors';
-import Spider from './pages/spider/spider';
-import Mount from './pages/mount/mount';
+import Scissors from './pages/boom/boom'
+import Spider from './pages/boom/boom'
+import Mount from './pages/boom/boom'
+import AboutUs from './pages/about/index'
+
+
+// import Scissors from './pages/scissors/scissors';
+// import Spider from './pages/spider/spider';
+// import Mount from './pages/mount/mount';
 
 const router = createBrowserRouter([
   {
@@ -41,6 +47,9 @@ const router = createBrowserRouter([
       }, {
         path: '/mount',
         element: <Mount />
+      }, {
+        path: '/aboutUs',
+        element: <AboutUs/>
       }
     ],
   },

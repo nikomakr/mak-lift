@@ -11,5 +11,3 @@ function BoomCalendar() {
 }
 
 export default BoomCalendar;
-
-
