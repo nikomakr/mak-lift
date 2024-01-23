@@ -1,5 +1,8 @@
 import React from 'react';
 import { useFormik } from 'formik';
+import * as Yup from 'yup'
+import CheckboxForm from '../checkboxForm';
+
 
 function Form () {
   const formik = useFormik({
@@ -27,6 +30,7 @@ function Form () {
       <input type="text" id="surname" name="surname" required />
       <label htmlFor='contact'>Contact Number</label>
       <input type="text" id="Contact" name="contact" required />
+      <CheckboxForm/>
       <label htmlFor='Subject'>Subject</label>
       <input type="text" id="Subject" name="subject" required />
       <label htmlFor='message'>Message</label>
