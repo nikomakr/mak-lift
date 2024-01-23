@@ -1,7 +1,9 @@
+import ScissorLift4 from '../../images/scissorsLift4.jpg';
+
 function ImageAbout(){
     return (
         <>
-        <img src="../../images/scissorsLift4.jpg" alt="" height="800" width="550" />
+        <img src= {ScissorLift4} alt="" height="800" width="550" />
         </>
     )
 }

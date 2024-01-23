@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import BoomCalendar from '../boomCalendar/boomCalendar';
 import ScissorsCalendar from '../scissorsCalendar/scissorsCalendar';
 import SpiderCalendar from '../spiderCalendar/spiderCalendar';
@@ -10,11 +10,27 @@ import MountCalendar from '../mountCalendar/mountCalendar';
 function ConsolidatedCalendar() {
   const [selectedFleetOption, setSelectedFleetOption] = useState([]);
   const [dateRange, setDateRange] = useState([new Date(), new Date()]);
-
+  useEffect(()=>{
+    document.getElementById("BoomCalendar").style.display="none";
+    document.getElementById("ScissorsCalendar").style.display="none";
+    document.getElementById("MountCalendar").style.display="none";
+    document.getElementById("SpiderCalendar").style.display="none";
+  },[])
   const handleFilterChange = (selectedOptions) => {
     setSelectedFleetOption(selectedOptions);
     console.log(selectedOptions);
-    document.getElementById("BoomCalendar").style.display="none";
+    if (selectedOptions[0]==="Boom Lift"){
+      document.getElementById("BoomCalendar").style.display="";
+    }
+    if (selectedOptions[0]==="Scissors Lift"){
+      document.getElementById("ScissorsCalendar").style.display="";
+    }
+    if (selectedOptions[0]==="Tracked Spider Lift"){
+      document.getElementById("SpiderCalendar").style.display="";
+    }
+    if (selectedOptions[0]==="Truck Mount Lift"){
+      document.getElementById("MountCalendar").style.display="";
+    }
   };
 
   const handleDateRangeChange = (newDateRange) => {
