@@ -5,7 +5,9 @@ import BasicExample from '../basicExample/';
 // import Logo from '../images/logoMak-Lift.png';
 
 
-export default function Navigation({text1, text2, text3, text4}) {
+import {Container} from 'react-bootstrap';
+
+export default function Navigation() {
 
   return (
     <div style={{zIndex: '10'}}>
@@ -22,6 +24,15 @@ export default function Navigation({text1, text2, text3, text4}) {
            <a href="/contactUs"><button className='text-dark btn'>Contact Us</button></a>
           <a href="/search"><button className='text-dark btn1'>Search & Hire</button></a>
       </div>
+            <h5><a href="/aboutUs" className='text-dark fs-3'>About US</a></h5>
+            <h5><a href="/fleet" className='text-dark fs-3'>Fleet</a></h5>
+            <h5><a href="/boom" className='text-dark fs-3'>Boom</a></h5>
+            <h5><a href="/scissors" className='text-dark fs-3'>Scissors</a></h5>
+            <h5><a href="/mount" className='text-dark fs-3'>Mount</a></h5>
+            <h5><a href="/spider" className='text-dark fs-3'>Spider</a></h5>
+            <h5><a href="/contactUs" className='text-dark fs-3'>Contact Us</a></h5>
+            <h5><a href="/search" className='text-dark fs-3'>Search & Hire</a></h5>
+          </div>
         </Container>
       </div>
 
