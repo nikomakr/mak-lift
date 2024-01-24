@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "mount",
+        "cost": 100
+      },
+    {
+        "id": 2,
+        "name": "scissors",
+        "cost":150
+      },
+    {
+        "id": 3,
+        "name": "boom",
+        "cost": 250
+      },
+    {
+        "id": 4,
+        "name": "spider",
+        "cost": 300
+      }
+  ]
+  
