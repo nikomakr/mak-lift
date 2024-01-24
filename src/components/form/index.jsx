@@ -2,6 +2,7 @@ import React from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import CheckboxForm from '../checkboxForm';
+import "./style.css";
 
 const initialValues = {
   companyname: '',
@@ -61,14 +62,14 @@ function MyForm() {
 
         <br />
 
-        <label htmlFor='hire'>Looking to hire</label>
+        <label className='hire' htmlFor='hire'>Looking to hire</label>
         <CheckboxForm />
 
         <label htmlFor='subject'>Subject</label>
         <Field type='text' id='subject' name='subject' />
 
         <label htmlFor='message'>Message</label>
-        <Field as='textarea' name='message' cols='30' rows='10' />
+        <Field as='textarea' name='message' />
 
         <button type='submit'>Submit</button>
       </Form>
