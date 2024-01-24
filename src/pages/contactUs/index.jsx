@@ -1,3 +1,4 @@
+import MyForm from '../../components/form';
 import Form from '../../components/form'
 import Image from '../../components/Image'
 import "./style.css";
@@ -21,7 +22,7 @@ const ContactUs = () => {
                <hr/>
                
                 {/* create the form */}
-               <Form/>
+               <MyForm/>
 
                     </div>
 

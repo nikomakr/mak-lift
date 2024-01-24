@@ -1,46 +1,79 @@
 import React from 'react';
-import { useFormik } from 'formik';
-import * as Yup from 'yup'
+import { Formik, Form, Field, ErrorMessage } from 'formik';
+import * as Yup from 'yup';
 import CheckboxForm from '../checkboxForm';
 
-
-function Form () {
-  const formik = useFormik({
-    initialValues:{
-      companyname:'',
-      email:'',
-      givenname:'',
-      surname:'',
-      contact:'',
-      subject:'',
-      message:'',
-    }
-  })
-  console.log('Form values', formik.values)
-  return (
-    <>
-    <form style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-center' }}>
-      <label htmlFor='companyname'>Company Name</label>
-      <input type="text" id='companyname' name="companyname" onChange={formik.handleChange} value={formik.values.name} required />
-      <label htmlFor='email address'>Email Address</label>
-      <input type="text" id='email' name="email" required />
-      <label htmlFor='givenname'>Given Name</label>
-      <input type="text" id='givenname' name="givenname" required />
-      <label htmlFor='surname'>Surname</label>
-      <input type="text" id="surname" name="surname" required />
-      <label htmlFor='contact'>Contact Number</label>
-      <input type="text" id="Contact" name="contact" required />
-      <br />
-      <label htmlFor='hire'>Looking to hire</label>
-      <CheckboxForm/>
-      <label htmlFor='Subject'>Subject</label>
-      <input type="text" id="Subject" name="subject" required />
-      <label htmlFor='message'>Message</label>
-      <textarea name="message" cols="30" rows="10"></textarea>
-    </form>
-    <button type='submit'>Submit</button>
-    </>
-  );
+const initialValues = {
+  companyname: '',
+  email: '',
+  givenname: '',
+  surname: '',
+  contact: '',
+  subject: '',
+  message: '',
 };
 
-export default Form;
+const onSubmit = values => {
+  console.log('Form data', values);
+};
+
+const validationSchema = Yup.object({
+  companyname: Yup.string().required('Required!'),
+  email: Yup.string().email('Invalid email format').required('Required'),
+  givenname: Yup.string().required('Required'),
+  surname: Yup.string().required('Required'),
+  contact: Yup.string().required('Required'),
+});
+
+function MyForm() {
+  return (
+    <Formik
+      initialValues={initialValues}
+      validationSchema={validationSchema}
+      onSubmit={onSubmit}
+    >
+      <Form
+        style={{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'start',
+        }}
+      >
+        <label htmlFor='companyname'>Company Name</label>
+        <Field type='text' id='companyname' name='companyname' />
+        <ErrorMessage name='companyname' component='div' />
+
+        <label htmlFor='email'>Email Address</label>
+        <Field type='text' id='email' name='email' />
+        <ErrorMessage name='email' component='div' />
+
+        <label htmlFor='givenname'>Given Name</label>
+        <Field type='text' id='givenname' name='givenname' />
+        <ErrorMessage name='givenname' component='div' />
+
+        <label htmlFor='surname'>Surname</label>
+        <Field type='text' id='surname' name='surname' />
+        <ErrorMessage name='surname' component='div' />
+
+        <label htmlFor='contact'>Contact Number</label>
+        <Field type='text' id='contact' name='contact' />
+        <ErrorMessage name='contact' component='div' />
+
+        <br />
+
+        <label htmlFor='hire'>Looking to hire</label>
+        <CheckboxForm />
+
+        <label htmlFor='subject'>Subject</label>
+        <Field type='text' id='subject' name='subject' />
+
+        <label htmlFor='message'>Message</label>
+        <Field as='textarea' name='message' cols='30' rows='10' />
+
+        <button type='submit'>Submit</button>
+      </Form>
+    </Formik>
+  );
+}
+
+export default MyForm;
