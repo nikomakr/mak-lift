@@ -30,6 +30,8 @@ function Form () {
       <input type="text" id="surname" name="surname" required />
       <label htmlFor='contact'>Contact Number</label>
       <input type="text" id="Contact" name="contact" required />
+      <br />
+      <label htmlFor='hire'>Looking to hire</label>
       <CheckboxForm/>
       <label htmlFor='Subject'>Subject</label>
       <input type="text" id="Subject" name="subject" required />
