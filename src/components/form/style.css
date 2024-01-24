@@ -41,3 +41,46 @@ button{
 button:hover{
     color: antiquewhite;
 }
+
+fieldset.group  { 
+    margin: 0; 
+    padding: 0; 
+    margin-bottom: 1em; 
+    padding: 0; 
+  } 
+  
+  fieldset.group legend { 
+    margin: 0; 
+    padding-top: 10px; 
+    font-weight: none ; 
+    margin-left: 0px; 
+    font-size: 100%; 
+    color: black; 
+  } 
+  
+  
+  ul.checkbox  { 
+    margin: 0; 
+    padding: 0; 
+    margin-left: 0px; 
+    list-style: none; 
+  } 
+  
+  ul.checkbox li input { 
+    margin-right: .25em; 
+  } 
+  
+  ul.checkbox li { 
+    border: 1px transparent solid; 
+    display:inline-block;
+    width:10em;
+  } 
+  
+  ul.checkbox li:hover, 
+  ul.checkbox li.focus  { 
+    background-color: none; 
+    border: 1px rgb(8, 7, 7) solid; 
+    border-radius: 8px;
+    width: 10em; 
+  } 
+  
