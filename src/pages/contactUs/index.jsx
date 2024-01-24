@@ -1,6 +1,7 @@
+import MyForm from '../../components/form';
 import Form from '../../components/form'
 import Image from '../../components/Image'
-
+import "./style.css";
 const ContactUs = () => {
     return(
         <>
@@ -13,20 +14,15 @@ const ContactUs = () => {
 
                     </div>
                     <div className="col-6">
-                    <h2 className="--text-center">We are available 24/7 to offer any help or support</h2>
+                    <h2 className="--text-center">We'd love to hear from you!</h2>
+                    <br/>
                     
-                    <p>Call, Email us or complete the form below for inquiries</p>
-                 <div>   
-                <b> <i className="bi bi-phone-vibrate-fill" height="20" width="20"> +302382025708 </i></b>
-
-               <b> <i className="bi bi-envelope-at-fill">info@mak-lift.gr</i> </b>
-               </div>
-               {/* <p><i className="EnvelopeFill" size={24}> info@mak-lift.gr </i></p> */}
-
-               <hr></hr>
+                    <p>Fill out the form below to get in touch with our team. Please, provide details about your inquiry to help us assist you better.</p>
+                    <p>We aim to respond within 24 hours!</p>
+               <hr/>
                
                 {/* create the form */}
-               <Form/>
+               <MyForm/>
 
                     </div>
 
