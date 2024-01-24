@@ -2,7 +2,6 @@
 import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
-// import * as bootstrap from 'bootstrap';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './pages/home';
@@ -13,6 +12,9 @@ import Boom from './pages/boom/boom';
 import Scissors from './pages/scissors/scissors';
 import Spider from './pages/spider/spider';
 import Mount from './pages/mount/mount';
+import AboutUs from './pages/about/index';
+
+
 
 const router = createBrowserRouter([
   {
@@ -41,6 +43,9 @@ const router = createBrowserRouter([
       }, {
         path: '/mount',
         element: <Mount />
+      }, {
+        path: '/aboutUs',
+        element: <AboutUs/>
       }
     ],
   },
