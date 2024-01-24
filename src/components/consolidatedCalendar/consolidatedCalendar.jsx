@@ -36,11 +36,11 @@ function ConsolidatedCalendar() {
     }
   };
 
-  const handleDateRangeChange = (newDateRange) => {
-    console.log(newDateRange)
-    setDateRange(newDateRange);
+  // const handleDateRangeChange = (newDateRange) => {
+  //   console.log(newDateRange)
+  //   setDateRange(newDateRange);
 
-  };
+  // };
 
   const handleDate = (event) => {
     console.log(event.target.value)

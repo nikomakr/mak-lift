@@ -16,7 +16,7 @@ export default function Navigation() {
           <NavLogo />
          </div>
          <div className='d-flex justify-content-center align-items-center gap-5 '>
-            <a href="/home"><button className='text-dark btn1'>Home</button></a>
+            <a href="/"><button className='text-dark btn1'>Home</button></a>
             <a href="/aboutUs"><button className='text-dark btn1'>AboutUs</button></a>
             <BasicExample/>
            <a href="/contactUs"><button className='text-dark btn1'>Contact Us</button></a>
