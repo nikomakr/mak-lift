@@ -3,6 +3,7 @@ import BoomCalendar from '../boomCalendar/boomCalendar';
 import ScissorsCalendar from '../scissorsCalendar/scissorsCalendar';
 import SpiderCalendar from '../spiderCalendar/spiderCalendar';
 import MountCalendar from '../mountCalendar/mountCalendar';
+
 // import ConsolidatedCalendar from '../consolidatedCalendar/consolidatedCalendar';
 // import Calendar from 'react-calendar';
 
@@ -10,6 +11,8 @@ import MountCalendar from '../mountCalendar/mountCalendar';
 function ConsolidatedCalendar() {
   const [selectedFleetOption, setSelectedFleetOption] = useState([]);
   const [dateRange, setDateRange] = useState([new Date(), new Date()]);
+  const [dateOne, setDateOne] = useState("");
+  const [dateTwo, setDateTwo] = useState("");
   useEffect(()=>{
     document.getElementById("BoomCalendar").style.display="none";
     document.getElementById("ScissorsCalendar").style.display="none";
@@ -34,9 +37,35 @@ function ConsolidatedCalendar() {
   };
 
   const handleDateRangeChange = (newDateRange) => {
+    console.log(newDateRange)
     setDateRange(newDateRange);
+
   };
 
+  const handleDate = (event) => {
+    console.log(event.target.value)
+    let date = new Date(event.target.value);
+    console.log(date)
+    setDateOne(date)
+  }
+
+  const handleDateTwo =(event) => {
+    console.log(event.target.value)
+    let date = new Date(event.target.value);
+    console.log(date)
+    setDateTwo(date)
+  }
+ console.log(dateOne, dateTwo)
+ const getRange = () => {
+  let DifferencesInTime =
+    dateTwo.getTime() - dateOne.getTime();
+    let Difference_nDays =
+    Math.round(DifferencesInTime/ (1000 * 3600 * 24));
+        console.log("Total number of days between dates:\n" +
+              dateOne.toDateString() + " and " +
+              dateTwo.toDateString() +
+              " is: " + Difference_nDays + " days");
+ }
   return (
     <div>
       <h2>Fleet Availability Calendar</h2>
@@ -56,8 +85,9 @@ function ConsolidatedCalendar() {
       </div>
       <div>
         <label>Date Range:</label>
-        <input type="date" value={dateRange[0]} onChange={(e) => handleDateRangeChange([new Date(e.target.value), dateRange[1]])} />
-        <input type="date" value={dateRange[1]} onChange={(e) => handleDateRangeChange([dateRange[0], new Date(e.target.value)])} />
+        <input type="date" value={dateRange[0]} onChange={(e) => handleDate(e)} />
+        <input type="date" value={dateRange[1]} onChange={(e) => handleDateTwo(e)} />
+        <button onClick={getRange}> click me</button>
       </div>
 
       <div className="calendars-container">
