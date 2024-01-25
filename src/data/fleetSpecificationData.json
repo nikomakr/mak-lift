@@ -1,0 +1,50 @@
+[
+    {
+        "fleetId": "1",
+        "fleetName": "Boom Lift",
+        "maxWorkingHeight": "12m",
+        "platformCapacity": "200kg",
+        "raisedPlatformHeight": "8m",
+        "workingOutreach": "3m",
+        "windth": "1m",
+        "length": "3.5m",
+        "weight": "2600kg",
+        "powerSource": "Battery"
+    },
+    {
+        "fleetId": "2",
+        "fleetName": "Scissors Lift",
+        "maxWorkingHeight": "18m",
+        "platformCapacity": "150kg",
+        "raisedPlatformHeight": "14m",
+        "workingOutreach": "1.5m",
+        "windth": "1m",
+        "length": "2.5m",
+        "weight": "1400kg",
+        "powerSource": "Battery"
+    },
+    {
+        "fleetId": "3",
+        "fleetName": "Tracked Spider Lift",
+        "maxWorkingHeight": "28m",
+        "platformCapacity": "320kg",
+        "raisedPlatformHeight": "12m",
+        "workingOutreach": "18m",
+        "windth": "1.5m",
+        "length": "3m",
+        "weight": "1200kg",
+        "powerSource": "Battery"
+    },
+    {
+        "fleetId": "4",
+        "fleetName": "Truck Mount Lift",
+        "maxWorkingHeight": "32m",
+        "platformCapacity": "450kg",
+        "raisedPlatformHeight": "27m",
+        "workingOutreach": "5m",
+        "windth": "2.1m",
+        "length": "9m",
+        "weight": "5700kg",
+        "powerSource": "Diesel"
+    }
+]
