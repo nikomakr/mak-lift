@@ -42,12 +42,23 @@ Streamlining B2B Lift Hiring Experience
   - [1/2] View availability of each fleet option
   - [x] Ability to create an inquiry
 ## Server Side API(s):
+10-implementing-json-and-api-on-search-component
 - [1/2] [Google Translate API] (https://rapidapi.com/undergroundapi-undergroundapi-default/api/google-translate113)
 - [x] JSON files to mimic the use of a database
+=======
+
+- [1/2] [Google Translate API] (https://rapidapi.com/undergroundapi-undergroundapi-default/api/google-translate113)
+- [x] JSON files to mimic the use of a database
+
+main
 ## Additional Technologies Used
 - [x] [Dealing with Forms in REACT] (https://formik.org/docs/overview)
 - [X] [Dealing with calendars in RAECT] (https://www.npmjs.com/package/react-calendar)
+10-implementing-json-and-api-on-search-component
 ## Additional Potential Features for future development
+
+## Additional Potential Features for future development
+main
 - Ability to compare two options based on:
   - Working height
   - Outreach
@@ -60,6 +71,10 @@ Streamlining B2B Lift Hiring Experience
 - Demonstration page with graphics on how to pick up and return tools/vehicles
 - [Exchange Rates API for localisation purposes](https://rapidapi.com/principalapis/api/currency-conversion-and-exchange-rates/)
 - [CSS] (https://www.npmjs.com/package/spinner-loader-library)
+10-implementing-json-and-api-on-search-component
+
+  
+ main
 ## Wireframe
 Wireframe details are provided in the previous text-based response (project proposal). Please, refer to the wireframe section for a visual representation. It represents just the direction of developer's work and client's preference. There were elements later on where client decisions lead into further optimisation.
 ## How to Run Locally
@@ -69,7 +84,13 @@ Wireframe details are provided in the previous text-based response (project prop
 4. Run the application: `npm start`, `npm run dev`
 5. Open your browser and visit: `http://localhost:3000` (please check if the host id number is different on your end)
 ## Deployment
+ 10-implementing-json-and-api-on-search-component
 - [x]  application is deployed using Netlify. You can access the live version [here](https://your-netlify-deployment-url).
+=======
+
+- [x]  application is deployed using Netlify. You can access the live version [here](https://your-netlify-deployment-url).
+
+ main
 ### Badges
 <br>
 ![GitHub all releases](https://img.shields.io/github/downloads/nikomakr/mak-lift/total)
