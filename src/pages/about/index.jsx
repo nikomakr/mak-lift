@@ -6,11 +6,10 @@ export default function aboutUs () {
   return (
 <>
 <div className="hart">
-
 </div>
 
 <section>
-            <div className="container">
+<div className="container">
                 <div className="row">
                     <div className="col-6">
                       <ImageAbout/>

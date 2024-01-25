@@ -5,6 +5,7 @@ import Footer from './components/footer'
 import Navigation from './components/navigation';
 import 'react-calendar/dist/Calendar.css';
 import Header from './components/header'
+// import Home from './pages/home'
 
 function App() {
   return (

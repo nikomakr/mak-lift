@@ -4,7 +4,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import Home from './pages/home';
 import ContactUs from './pages/contactUs';
 import NotFound from './pages/notFound';
 import Search from './pages/search/search';
@@ -23,8 +22,8 @@ const router = createBrowserRouter([
     errorElement: <NotFound />,
     children: [
       {
-        index: true,
-        element: <Home />
+        // index: true,
+        // element: <Home />
       }, {
         path: '/contactUs',
         element: <ContactUs />

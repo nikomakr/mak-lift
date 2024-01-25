@@ -14,7 +14,7 @@ function Footer() {
       <img src={logo} alt="Logo" />
       </div>
       {/* Column 2 for Head office address and contact */}
-        <div className="col-md-3 col-sm-6">
+      <div className="col-md-3 col-sm-6">
       <h4><i className="bi bi-geo-alt"/>   Head Office:</h4>
       <p>Makridis, Egnatia 51, Giannitsa, 58100, Greece.</p>
       <h5> <i className='bi bi-telephone-outbound-fill'/>   Customer Support:</h5>
