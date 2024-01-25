@@ -1,19 +1,13 @@
 # Mak-Lift
-
 **Hire Lifting Machines & Vehicles**
-
 ## The Team, NCS:
 Contributors:
 - **Nikolaos Makridis**
 - **Chiamaka Lilian Amadi**
 - **Shola Akanbi**
-
 ## Overview
-
 Mak-Lift is a platform specializing in lifting machines and vehicles. Our website provides an overview of our current fleet options, detailed specifications for each option, availability, and a seamless inquiry process.
-
 ## General Requirements
-
 - [x] **ReactJS**: The project is built using ReactJS.
 - [x] **GET Routes**: Utilizes two GET routes for data retrieval.
 - [x] **Deployment**: The application is deployed using Netlify.
@@ -21,15 +15,10 @@ Mak-Lift is a platform specializing in lifting machines and vehicles. Our websit
 - [x] **Polished UI**: Front end/UI is designed to be polished and user-friendly.
 - [x] **Coding Standards**: Adheres to good coding standards (indentation, scoping, naming).
 - [x] **Quality README**: Contains a unique name, description, technologies used, screenshot, and a link to the deployed application.
-
 ## User Story
-
 - [x] *User Role (Who):** As a user, a representative of an SME, I am looking for a business to rent/hire useful tools and vehicles to help our team overcome challenges in various scenarios dealing with heavy weight lifting and reaching heights.
-
 - [x] *Achievable Action (What):** Find fleet catalog options, understand specifications, search availability, and create inquiries.
-
 - [x] *Desired Business Value (Why):** Achieve the first layer of including or excluding certain fleet options, validate the idea of the ideal option, and create an inquiry for potential hire or tool/vehicle acquisition.
-
 **Acceptance Criteria:**
 - [x] Detailed product information per fleet option.
 - [1/2] Polished UI/UX with a responsive design.
@@ -38,12 +27,9 @@ Mak-Lift is a platform specializing in lifting machines and vehicles. Our websit
 - [0] Displays availability on a calendar month.
 - [x] Built in REACT for scalability.
 - [x] User-friendly browsing experience.
-
-**Story Name:** 
+**Story Name:**
 Streamlining B2B Lift Hiring Experience
-
 ## Minimum Viable Product
-
 - [x] Navigation bar
 - [x] Footer
 - [x] About page
@@ -55,19 +41,24 @@ Streamlining B2B Lift Hiring Experience
   - [x] Filter in/out from fleet options
   - [1/2] View availability of each fleet option
   - [x] Ability to create an inquiry
-
 ## Server Side API(s):
+10-implementing-json-and-api-on-search-component
+- [1/2] [Google Translate API] (https://rapidapi.com/undergroundapi-undergroundapi-default/api/google-translate113)
+- [x] JSON files to mimic the use of a database
+=======
 
 - [1/2] [Google Translate API] (https://rapidapi.com/undergroundapi-undergroundapi-default/api/google-translate113)
 - [x] JSON files to mimic the use of a database
 
+main
 ## Additional Technologies Used
-
 - [x] [Dealing with Forms in REACT] (https://formik.org/docs/overview)
 - [X] [Dealing with calendars in RAECT] (https://www.npmjs.com/package/react-calendar)
-
+10-implementing-json-and-api-on-search-component
 ## Additional Potential Features for future development
 
+## Additional Potential Features for future development
+main
 - Ability to compare two options based on:
   - Working height
   - Outreach
@@ -80,27 +71,28 @@ Streamlining B2B Lift Hiring Experience
 - Demonstration page with graphics on how to pick up and return tools/vehicles
 - [Exchange Rates API for localisation purposes](https://rapidapi.com/principalapis/api/currency-conversion-and-exchange-rates/)
 - [CSS] (https://www.npmjs.com/package/spinner-loader-library)
+10-implementing-json-and-api-on-search-component
+
   
+ main
 ## Wireframe
-
 Wireframe details are provided in the previous text-based response (project proposal). Please, refer to the wireframe section for a visual representation. It represents just the direction of developer's work and client's preference. There were elements later on where client decisions lead into further optimisation.
-
 ## How to Run Locally
-
 1. Clone the repository: `git clone https://github.com/your-username/Mak-Lift.git`
 2. Navigate to the project directory: `cd Mak-Lift`
 3. Install dependencies: `npm install`
 4. Run the application: `npm start`, `npm run dev`
 5. Open your browser and visit: `http://localhost:3000` (please check if the host id number is different on your end)
-
 ## Deployment
+ 10-implementing-json-and-api-on-search-component
+- [x]  application is deployed using Netlify. You can access the live version [here](https://your-netlify-deployment-url).
+=======
 
 - [x]  application is deployed using Netlify. You can access the live version [here](https://your-netlify-deployment-url).
 
+ main
 ### Badges
-
 <br>
-
 ![GitHub all releases](https://img.shields.io/github/downloads/nikomakr/mak-lift/total)
 ![GitHub language count](https://img.shields.io/github/languages/count/nikomakr/mak-lift)
 ![GitHub top language](https://img.shields.io/github/languages/top/nikomakr/mak-lift?color=yellow)
@@ -108,8 +100,6 @@ Wireframe details are provided in the previous text-based response (project prop
 ![GitHub Repo stars](https://img.shields.io/github/stars/nikomakr/mak-lift?style=social)
 ![Percentage of Contribution per Commit](https://img.shields.io/github/commit-activity/m/nikomakr/mak-lift)
 ![Percentage of Contribution per Code](https://img.shields.io/github/contributors-anon/nikomakr/mak-lift)
-
 <br>
 ## Screenshots
-
 ![Screenshot](path/to/screenshot.png)

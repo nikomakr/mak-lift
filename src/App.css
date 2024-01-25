@@ -55,49 +55,4 @@
     position: relative; /* Enable positioning for absolute positioning inside */
   }
   
-/* Button A in navigation bar */
-.button-a-nav {
-    background-color: #fe3253; /* RED */
-    color: #efe6e6; /* WHITE */
-    padding: 1em 2em; /* Larger padding for a bigger button */
-    border: none;
-    cursor: pointer;
-    border-radius: 4px;
-  }
 
-  .button-a-nav:hover {
-    background-color: #d22945; /* Slightly darker red on hover */
-  }
-
-/* Button A in footer
-/* .button-a-footer {
-    background-color: #fe3253; /* RED */
-    /* color: #efe6e6; WHITE */
-    /* padding: 0.5em 1em; Smaller padding for a smaller button */
-    /* border: none; */
-    /* cursor: pointer; */
-    /* border-radius: 4px; */
-    /* position: absolute; */
-    /* bottom: 1em; Positioned at the bottom of the footer */
-    /* left: 50%; Center horizontally */
-    /* transform: translateX(-50%); Adjust for centering */
-  /* } */ */
-  
-  /* .button-a-footer:hover {
-    background-color: #d22945; /* Slightly darker red on hover */
-  /* } */ */
-  
-  /* Button B in footer */
-  /* .button-b-footer {
-    /* background-color: #004E74; /* BLUE */
-    /* color: #efe6e6; WHITE */
-    /* padding: 0.5em 1em; Smaller padding for a smaller button */
-    /* border: none; */
-    /* cursor: pointer; */
-    /* border-radius: 4px; */
-    /* margin-left: 1em; Add some spacing between Button A and Button B */
-  /* } */
-  
-  /* .button-b-footer:hover {
-    background-color: #00365a; /* Slightly darker blue on hover */
-  /* } */

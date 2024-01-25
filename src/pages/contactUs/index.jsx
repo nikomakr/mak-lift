@@ -1,8 +1,27 @@
-import MyForm from '../../components/form';
-import Form from '../../components/form'
+import React, {useEffect, useState}from 'react';
 import Image from '../../components/Image'
+import Api from '../../utils/api'
+import MyForm from '../../components/form';
 import "./style.css";
 const ContactUs = () => {
+    const [translator, setTranslator] = useState([]);
+    const [language, setLanguage] = useState('en'); // Default language is English
+  
+    useEffect(() => {
+      const translateHTML = async () => {
+    //     // Call the translation API or library here with the HTML content and the selected language
+           const data = await Api.getLatestTranslator()
+          console.log(data.data)
+           console.log(data)
+        setTranslator(data.data)
+      };
+  
+      translateHTML();
+    }, [language]);
+  
+    // const handleLanguageChange = (event) => {
+    //   setLanguage(event.target.value);
+    // };
     return(
         <>
         <section>
@@ -14,7 +33,7 @@ const ContactUs = () => {
 
                     </div>
                     <div className="col-6">
-                    <h2 className="--text-center">We'd love to hear from you!</h2>
+                    <h2 className="--text-center"> We'd love to hear from you!</h2>
                     <br/>
                     
                     <p>Fill out the form below to get in touch with our team. Please, provide details about your inquiry to help us assist you better.</p>
