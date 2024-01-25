@@ -15,8 +15,8 @@ Mak-Lift is a platform specializing in lifting machines and vehicles. Our websit
 ## General Requirements
 
 - [x] **ReactJS**: The project is built using ReactJS.
-- [] **GET Routes**: Utilizes two GET routes for data retrieval.
-- [] **Deployment**: The application is deployed using Netlify.
+- [x] **GET Routes**: Utilizes two GET routes for data retrieval.
+- [x] **Deployment**: The application is deployed using Netlify.
 - [x] **Technologies**: Incorporates at least two libraries, packages, or technologies not covered in discussions.
 - [x] **Polished UI**: Front end/UI is designed to be polished and user-friendly.
 - [x] **Coding Standards**: Adheres to good coding standards (indentation, scoping, naming).
@@ -31,11 +31,11 @@ Mak-Lift is a platform specializing in lifting machines and vehicles. Our websit
 - [x] *Desired Business Value (Why):** Achieve the first layer of including or excluding certain fleet options, validate the idea of the ideal option, and create an inquiry for potential hire or tool/vehicle acquisition.
 
 **Acceptance Criteria:**
-- [] Detailed product information per fleet option.
-- [] Polished UI/UX with a responsive design.
-- [] Retrieves internal data stored in JSON file.
-- [] Utilizes a relevant API for dynamic availability.
-- [] Displays availability on a calendar month.
+- [x] Detailed product information per fleet option.
+- [1/2] Polished UI/UX with a responsive design.
+- [x] Retrieves internal data stored in JSON file.
+- [x] Utilizes a relevant API for dynamic availability.
+- [0] Displays availability on a calendar month.
 - [x] Built in REACT for scalability.
 - [x] User-friendly browsing experience.
 
@@ -47,27 +47,26 @@ Streamlining B2B Lift Hiring Experience
 - [x] Navigation bar
 - [x] Footer
 - [x] About page
-- [] Home page
-- [] Fleet page
-  - [] Display availability for each fleet option
-  - [] Detailed specifications
-- [] Contact Us page
+- [x] Fleet page
+  - [1/2] Display availability for each fleet option
+  - [x] Detailed specifications
+- [x] Contact Us page
 - [x] Search/Hire (Check availability) page
   - [x] Filter in/out from fleet options
-  - [] View availability of each fleet option
+  - [1/2] View availability of each fleet option
   - [x] Ability to create an inquiry
 
 ## Server Side API(s):
 
-- [] [Exchange Rate API] (https://rapidapi.com/principalapis/api/currency-conversion-and-exchange-rates/)
-- [] JSON files to mimic the use of a database
+- [1/2] [Google Translate API] (https://rapidapi.com/undergroundapi-undergroundapi-default/api/google-translate113)
+- [x] JSON files to mimic the use of a database
 
 ## Additional Technologies Used
 
 - [x] [Dealing with Forms in REACT] (https://formik.org/docs/overview)
 - [X] [Dealing with calendars in RAECT] (https://www.npmjs.com/package/react-calendar)
 
-## Additional Potential Features
+## Additional Potential Features for future development
 
 - Ability to compare two options based on:
   - Working height
@@ -79,9 +78,9 @@ Streamlining B2B Lift Hiring Experience
 - Extras such insurance add-on page with options from various providers
 - Transportation/Delivery of tools and vehicles to preferred locations with providers and cost breakdown
 - Demonstration page with graphics on how to pick up and return tools/vehicles
-- [Spinner Loader Library](https://www.npmjs.com/package/spinner-loader-library) for adding CSS animations
-- [Spinner CSS] (https://www.npmjs.com/package/spinner-loader-library)
-
+- [Exchange Rates API for localisation purposes](https://rapidapi.com/principalapis/api/currency-conversion-and-exchange-rates/)
+- [CSS] (https://www.npmjs.com/package/spinner-loader-library)
+  
 ## Wireframe
 
 Wireframe details are provided in the previous text-based response (project proposal). Please, refer to the wireframe section for a visual representation. It represents just the direction of developer's work and client's preference. There were elements later on where client decisions lead into further optimisation.
@@ -96,7 +95,7 @@ Wireframe details are provided in the previous text-based response (project prop
 
 ## Deployment
 
-- []  application is deployed using Netlify. You can access the live version [here](https://your-netlify-deployment-url).
+- [x]  application is deployed using Netlify. You can access the live version [here](https://your-netlify-deployment-url).
 
 ### Badges
 
