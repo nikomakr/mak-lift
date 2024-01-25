@@ -2,7 +2,7 @@ import React from 'react'
 import {Container} from 'react-bootstrap'
 import "./style.css";
 import BasicExample from '../basicExample/';
-import NavLogo from '../navLogo/';
+// import NavLogo from '../navLogo/';
 // import {Container} from 'react-bootstrap';
 
 export default function Navigation() {
@@ -14,7 +14,7 @@ export default function Navigation() {
            <div className='d-flex align-tems-center gap-md-5' >
          </div>
          <div className='d-flex justify-content-center align-items-center gap-5 '>
-            <a href="/"><button className='text-dark btn1'>Home</button></a>
+            {/* <a href="/"><button className='text-dark btn1'>Home</button></a> */}
             <a href="/aboutUs"><button className='text-dark btn1'>AboutUs</button></a>
             <BasicExample/>
            <a href="/contactUs"><button className='text-dark btn1'>Contact Us</button></a>
