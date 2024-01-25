@@ -5,7 +5,7 @@ function BoomCalendar() {
 
   return (
     <div id="BoomCalendar">
-      <h3>Boom Lift Calendar</h3>
+      <h3 className='text-center'>Boom Lift Calendar</h3>
       <Calendar />
     </div>
   );
