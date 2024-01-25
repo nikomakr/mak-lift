@@ -112,6 +112,8 @@ Wireframe details are provided in the previous text-based response (project prop
 ![Percentage of Contribution per Code](https://img.shields.io/github/contributors-anon/nikomakr/mak-lift)
 
 <br>
+
+
 ## Screenshots
 
 ![Screenshot of the website] (https://drive.google.com/file/d/1bCY6fSQOHFmm7u_KJHM94RT8qBaI0UWw/view?usp=sharing)https://drive.google.com/file/d/1bCY6fSQOHFmm7u_KJHM94RT8qBaI0UWw/view?usp=sharing)
