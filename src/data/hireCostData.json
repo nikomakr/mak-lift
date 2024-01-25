@@ -1,0 +1,26 @@
+[
+    {
+        "fleetId": "1",
+        "fleetName": "Boom Lift",
+        "price": "50",
+        "currency": "EUR"
+    },
+    {
+        "fleetId": "2",
+        "fleetName": "Scissors Lift",
+        "price": "60",
+        "currency": "EUR"
+    },
+    {
+        "fleetId": "3",
+        "fleetName": "Tracked Spider Lift",
+        "price": "75",
+        "currency": "EUR"
+    },
+    {
+        "fleetId": "4",
+        "fleetName": "Truck Mount Lift",
+        "price": "120",
+        "currency": "EUR"
+    }
+]
