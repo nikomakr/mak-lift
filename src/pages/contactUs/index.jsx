@@ -1,7 +1,26 @@
+import React, {useEffect, useState}from 'react';
 import Form from '../../components/form'
 import Image from '../../components/Image'
+import Api from '../../utils/api'
 
 const ContactUs = () => {
+    const [translator, setTranslator] = useState([]);
+    const [language, setLanguage] = useState('en'); // Default language is English
+  
+    useEffect(() => {
+      const translateHTML = async () => {
+        // Call the translation API or library here with the HTML content and the selected language
+        const data = Api.getLatestTranslator()
+        const translatedContent = await translateAPI.translateHTML(translator, language);
+        setTranslator(translatedContent);
+      };
+  
+      translateHTML();
+    }, [language]);
+  
+    const handleLanguageChange = (event) => {
+      setLanguage(event.target.value);
+    };
     return(
         <>
         <section>

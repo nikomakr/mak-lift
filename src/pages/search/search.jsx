@@ -4,11 +4,11 @@ import Api from '../../utils/api';
 
 
 function Search() {
-  const [rate, setRate] = useState([])
+  const [translator, setTranslator] = useState([])
   useEffect(()=>{
- const data = Api.getLatestRate()
+ const data = Api.getLatestTranslator()
  console.log(data)
- setRate(data)
+ setTranslator(data)
   },[])
   return (
     <div>
