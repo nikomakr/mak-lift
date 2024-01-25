@@ -1,5 +1,5 @@
 import React from 'react';
-// import logo from '../../images/logoMak-Lift.png';
+import logo from '../../images/logoMak-Lift.png';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -13,9 +13,9 @@ function Footer() {
       <div className="row">
 
         {/* Column 1 for logo */}
-      {/* <div className="col-md-3 col-sm-6"> */}
-                 {/* <img src={logo} alt="Logo" /> */}
-      {/* </div> */}
+      <div className="col-md-3 col-sm-6"> 
+                 <img src={logo} alt="Logo" />
+       </div>
 
       {/* Column 2 for Head office address and contact */}
         <div className="col-md-4 col-sm-6">

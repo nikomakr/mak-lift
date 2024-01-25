@@ -12,8 +12,6 @@ export default function Navigation() {
       <div className='w-100'>
       <Container className='d-flex align-items-center justify-content-between p-2 border-bottom'>
            <div className='d-flex align-tems-center gap-md-5' >
-            
-          <NavLogo />
          </div>
          <div className='d-flex justify-content-center align-items-center gap-5 '>
             <a href="/"><button className='text-dark btn1'>Home</button></a>

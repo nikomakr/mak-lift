@@ -1,22 +1,23 @@
-// import React, {useEffect, useState}from 'react';
+import React, {useEffect, useState}from 'react';
 import Image from '../../components/Image'
-// import Api from '../../utils/api'
+import Api from '../../utils/api'
 import MyForm from '../../components/form';
 import "./style.css";
 const ContactUs = () => {
-    // const [translator, setTranslator] = useState([]);
-    // const [language, setLanguage] = useState('en'); // Default language is English
+    const [translator, setTranslator] = useState([]);
+    const [language, setLanguage] = useState('en'); // Default language is English
   
-    // useEffect(() => {
-    //   const translateHTML = async () => {
+    useEffect(() => {
+      const translateHTML = async () => {
     //     // Call the translation API or library here with the HTML content and the selected language
-    //     // const data = Api.getLatestTranslator()
-    //     const translatedContent = await translateAPI.translateHTML(translator, language);
-    //     setTranslator(translatedContent);
-    //   };
+           const data = await Api.getLatestTranslator()
+          console.log(data.data)
+           console.log(data)
+        setTranslator(data.data)
+      };
   
-    //   translateHTML();
-    // }, [language]);
+      translateHTML();
+    }, [language]);
   
     // const handleLanguageChange = (event) => {
     //   setLanguage(event.target.value);
