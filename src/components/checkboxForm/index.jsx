@@ -9,7 +9,7 @@ function FormikContainer() {
   const checkboxOptions = [
     { key: 'Boom Lift', value: 'cBoomLift' },
     { key: 'Scissors Lift', value: 'cScissorsLift' },
-    { key: 'Tracked Spider Mount', value: 'cTrackedspidermount' },
+    { key: 'Tracked Spider Lift', value: 'cTrackedspidermount' },
     { key: 'Truck Mount Lift', value: 'cTruckmountLift' },
     { key: 'Not sure', value: 'cNotsure' }
   ];

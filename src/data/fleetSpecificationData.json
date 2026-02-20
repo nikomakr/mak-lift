@@ -6,7 +6,7 @@
         "platformCapacity": "200kg",
         "raisedPlatformHeight": "8m",
         "workingOutreach": "3m",
-        "windth": "1m",
+        "width": "1m",
         "length": "3.5m",
         "weight": "2600kg",
         "powerSource": "Battery"
@@ -18,7 +18,7 @@
         "platformCapacity": "150kg",
         "raisedPlatformHeight": "14m",
         "workingOutreach": "1.5m",
-        "windth": "1m",
+        "width": "1m",
         "length": "2.5m",
         "weight": "1400kg",
         "powerSource": "Battery"
@@ -30,7 +30,7 @@
         "platformCapacity": "320kg",
         "raisedPlatformHeight": "12m",
         "workingOutreach": "18m",
-        "windth": "1.5m",
+        "width": "1.5m",
         "length": "3m",
         "weight": "1200kg",
         "powerSource": "Battery"
@@ -42,7 +42,7 @@
         "platformCapacity": "450kg",
         "raisedPlatformHeight": "27m",
         "workingOutreach": "5m",
-        "windth": "2.1m",
+        "width": "2.1m",
         "length": "9m",
         "weight": "5700kg",
         "powerSource": "Diesel"

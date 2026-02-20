@@ -12,6 +12,7 @@ import Scissors from './pages/scissors/scissors';
 import Spider from './pages/spider/spider';
 import Mount from './pages/mount/mount';
 import AboutUs from './pages/about/index';
+import Home from './pages/home';
 
 
 
@@ -22,8 +23,8 @@ const router = createBrowserRouter([
     errorElement: <NotFound />,
     children: [
       {
-        // index: true,
-        // element: <Home />
+        index: true,
+        element: <Home />
       }, {
         path: '/contactUs',
         element: <ContactUs />

@@ -28,7 +28,7 @@ function Scissors() {
               Working outreach: {FleetSpecificationData[1].workingOutreach}
             </p>
             <p className="info">
-              Width:  {FleetSpecificationData[1].windth}
+              Width:  {FleetSpecificationData[1].width}
             </p>
             <p className="info">
               Length: {FleetSpecificationData[1].length}

@@ -28,7 +28,7 @@ function Spider() {
               Working outreach: {FleetSpecificationData[2].workingOutreach}
             </p>
             <p className="info">
-              Width:  {FleetSpecificationData[2].windth}
+              Width:  {FleetSpecificationData[2].width}
             </p>
             <p className="info">
               Length: {FleetSpecificationData[2].length}

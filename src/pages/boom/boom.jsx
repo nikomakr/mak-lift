@@ -28,7 +28,7 @@ function Boom() {
               Working outreach: {FleetSpecificationData[0].workingOutreach}
             </p>
             <p className="info">
-              Width:  {FleetSpecificationData[0].windth}
+              Width:  {FleetSpecificationData[0].width}
             </p>
             <p className="info">
               Length: {FleetSpecificationData[0].length}

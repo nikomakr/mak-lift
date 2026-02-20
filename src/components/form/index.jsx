@@ -1,7 +1,6 @@
 import React from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
-import CheckboxForm from '../checkboxForm';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import "./style.css";
@@ -26,7 +25,7 @@ const onSubmit = values => {
 const checkboxOptions = [
   { key: 'Boom Lift', value: 'cBoomLift' },
   { key: 'Scissors Lift', value: 'cScissorsLift' },
-  { key: 'Tracked Spider Mount', value: 'cTrackedspidermount' },
+  { key: 'Tracked Spider Lift', value: 'cTrackedspidermount' },
   { key: 'Truck Mount Lift', value: 'cTruckmountLift' },
   { key: 'Not sure', value: 'cNotsure' }
 ];
@@ -37,8 +36,6 @@ const validationSchema = Yup.object({
   givenname: Yup.string().required('Required'),
   surname: Yup.string().required('Required'),
   contact: Yup.string().required('Required'),
-})
-Yup.object().shape({
   fleetOptions: Yup.array().min(1, 'Please select at least one fleet option.'),
   startDate: Yup.string().required('Start date is required.'),
   endDate: Yup.string().required('End date is required.')
@@ -88,7 +85,6 @@ function MyForm() {
               {checkboxOptions.map(check => (
                 <li key={check.value}>
                   <Field
-                    key={check.value}
                     type="checkbox"
                     id={check.value}
                     name="fleetOptions"
@@ -125,8 +121,6 @@ function MyForm() {
             </Col>
           </Row>
           
-          {/* <CheckboxForm /> */}
-
           <label htmlFor='subject'>Subject</label>
           <Field type='text' id='subject' name='subject' />
 

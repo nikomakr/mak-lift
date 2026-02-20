@@ -10,7 +10,6 @@ import MountCalendar from '../mountCalendar/mountCalendar';
 
 function ConsolidatedCalendar() {
   const [selectedFleetOption, setSelectedFleetOption] = useState([]);
-  const [dateRange, setDateRange] = useState([new Date(), new Date()]);
   const [dateOne, setDateOne] = useState("");
   const [dateTwo, setDateTwo] = useState("");
   useEffect(()=>{
@@ -43,29 +42,23 @@ function ConsolidatedCalendar() {
   // };
 
   const handleDate = (event) => {
-    console.log(event.target.value)
-    let date = new Date(event.target.value);
-    console.log(date)
-    setDateOne(date)
+    setDateOne(event.target.value);
   }
 
-  const handleDateTwo =(event) => {
-    console.log(event.target.value)
-    let date = new Date(event.target.value);
-    console.log(date)
-    setDateTwo(date)
+  const handleDateTwo = (event) => {
+    setDateTwo(event.target.value);
   }
- console.log(dateOne, dateTwo)
- const getRange = () => {
-  let DifferencesInTime =
-    dateTwo.getTime() - dateOne.getTime();
-    let Difference_nDays =
-    Math.round(DifferencesInTime/ (1000 * 3600 * 24));
-        console.log("Total number of days between dates:\n" +
-              dateOne.toDateString() + " and " +
-              dateTwo.toDateString() +
-              " is: " + Difference_nDays + " days");
- }
+
+  const getRange = () => {
+    const d1 = new Date(dateOne);
+    const d2 = new Date(dateTwo);
+    const differencesInTime = d2.getTime() - d1.getTime();
+    const differenceInDays = Math.round(differencesInTime / (1000 * 3600 * 24));
+    console.log("Total number of days between dates:\n" +
+      d1.toDateString() + " and " +
+      d2.toDateString() +
+      " is: " + differenceInDays + " days");
+  }
   return (
     <div>
       <h2>Fleet Availability Calendar</h2>
@@ -85,8 +78,8 @@ function ConsolidatedCalendar() {
       </div>
       <div>
         <label>Date Range:</label>
-        <input type="date" value={dateRange[0]} onChange={(e) => handleDate(e)} />
-        <input type="date" value={dateRange[1]} onChange={(e) => handleDateTwo(e)} />
+        <input type="date" value={dateOne} onChange={(e) => handleDate(e)} />
+        <input type="date" value={dateTwo} onChange={(e) => handleDateTwo(e)} />
         <button onClick={getRange}> click me</button>
       </div>
 

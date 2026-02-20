@@ -28,7 +28,7 @@ function Mount() {
               Working outreach: {FleetSpecificationData[3].workingOutreach}
             </p>
             <p className="info">
-              Width:  {FleetSpecificationData[3].windth}
+              Width:  {FleetSpecificationData[3].width}
             </p>
             <p className="info">
               Length: {FleetSpecificationData[3].length}

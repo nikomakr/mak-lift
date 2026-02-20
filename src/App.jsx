@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react';
-import { BrowserRouter as Router, Route, Outlet } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
 import Footer from './components/footer'
 import Navigation from './components/navigation';
 import 'react-calendar/dist/Calendar.css';
